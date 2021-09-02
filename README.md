@@ -1,2 +1,2 @@
-# szko-a
+# szkola
 Szkolne
