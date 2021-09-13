@@ -41,4 +41,10 @@ echo strstr("janusz@gmail.com","@");//@gmail.com
 echo stristr("janusz@gmail.com","G");//gmail.com
 echo stristr("janusz@gmail.com","64");//@gmail.com
 
+$name="Janusz";
+echo substr($name,2);//nusz
+echo substr($name,2,3);//nus
+echo substr($name,-2);//sz
+echo substr($name,-2,1);//s
+echo substr(strstr("janusz@gmail.com",));
 ?>
