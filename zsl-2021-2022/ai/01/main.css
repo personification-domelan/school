@@ -61,6 +61,8 @@ main{
     width: 20%;
     background-color: blue;
     height: inherit;
+    display: flex;
+    align-items: center;
 }
 #right{
     text-align: center;
