@@ -5,15 +5,19 @@
         <title>Form</title>
     </head>
     <body>
-        <form>
-
-            <input type="text" name="name" placeholder="Imię"><br><br>
-            <input type="text" name="surname" placeholder="Nazwisko"><br><br>
+        <form action="7.php" method="GET">
+            <input type="number" name="years" placeholder="Wiek" require><br><br>
+            <input type="text" name="name" placeholder="Imię" require><br><br>
             <input type="submit" value="Zatwierdź dane">
         </form>
         <?php
-        if (isset($_GET['name'])){
-            echo $_GET['name'];
+        if (!empty($_GET['name']) && !empty($_GET['years'])){
+            echo <<<E
+                Imię i nazwisko: 
+                $_GET[name] $_GET[years]
+            E;
+        }else{
+            echo "Wypełnij wyszstkie pola";
         }
         ?>
     </body>
