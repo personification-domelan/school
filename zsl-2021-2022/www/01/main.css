@@ -1,0 +1,103 @@
+body {
+    height: 1000px;
+    width: 100%;   
+    background-color: black;
+    margin: auto;
+}
+li{
+    text-align: left;
+}
+h2{
+    text-align: left;
+}
+h3{
+    text-align: left;
+    padding-left: 40px;
+}
+.l1 {
+    list-style-type:upper-alpha;
+}
+.l1 #p1 {
+    color: yellow;
+}
+.l1 #p2 {
+    color: rgb(255, 123, 0);
+}
+.l1 #p3 {
+    color: yellow;
+}
+.l2 {
+    color: rgb(255, 123, 0);
+}
+.l2 #p1 {
+    color: rgb(255, 123, 0);
+}
+.l2 #p2 {
+    color: yellow;
+}
+.l2 #p3 {
+    color: rgb(255, 123, 0);
+}
+.lm{
+    list-style-type: none;
+}
+img {
+    width: 90%;
+    margin: auto;
+}
+main{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#left{
+    text-align: center;
+    margin-left: auto;
+    padding-right: 10px;
+    width: 20%;
+    background-color: blue;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+#right{
+    text-align: center;
+    width: 40%;
+    margin-right: auto;
+    padding-left: 10px;
+    background-color: purple;
+    height: inherit;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border: 1px dashed darkgreen;
+    height: 30px;
+}
+#td1{
+    background-color: yellow;
+}
+p{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+a:hover{
+    color: springgreen;
+}
