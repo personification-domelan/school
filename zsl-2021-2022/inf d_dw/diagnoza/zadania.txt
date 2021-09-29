@@ -1,0 +1,15 @@
+1.
+a) nwd(56,72)=nwd(72,0)=0 > 2 wywoła   
+   nwd(72,56)=nwd(56,6)=nwd(6,2)=nwd(2,0)=2 > 4 wywołania
+b) int a, b, c, i
+cin a,b
+till c!=0 do
+    c = a mod b
+    a=b
+    b=c
+    i++
+cout Powtórzenia = i, wynik rowny b
+
+2.
+a)pffp
+b)ffpp
