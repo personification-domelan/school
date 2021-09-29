@@ -37,14 +37,14 @@ echo strlen(rtrim($name1));//6
 echo strlen(trim($name1));//4
 
 //przeszukiwanie ciągów
-echo strstr("janusz@gmail.com","@");//@gmail.com
-echo stristr("janusz@gmail.com","G");//gmail.com
-echo stristr("janusz@gmail.com","64");//@gmail.com
+echo strstr("janusz@gmail.com","@"),'<br>';//@gmail.com
+echo stristr("janusz@gmail.com","G"),'<br>';//gmail.com
+echo stristr("janusz@gmail.com","64"),'<br>';//@gmail.com
 
 $name="Janusz";
-echo substr($name,2);//nusz
-echo substr($name,2,3);//nus
-echo substr($name,-2);//sz
-echo substr($name,-2,1);//s
-echo substr(strstr("janusz@gmail.com",));
+echo substr($name,2),'<br>';//nusz
+echo substr($name,2,3),'<br>';//nus
+echo substr($name,-2),'<br>';//sz
+echo substr($name,-2,1),'<br>';//s
+echo substr(strstr("janusz@gmail.com","@"),1),'<br>';
 ?>
