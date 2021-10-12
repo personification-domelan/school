@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{28dd3aaf-84b3-497c-a694-dd4736bda244}</ProjectGuid>
+    <ProjectGuid>{f2383f09-8bfa-4dd0-ba66-8174463e2c43}</ProjectGuid>
     <RootNamespace>My02</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -140,9 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="02.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="02.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

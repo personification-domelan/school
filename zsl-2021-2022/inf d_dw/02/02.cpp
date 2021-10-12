@@ -2,13 +2,13 @@
 
 using namespace std;
 
-enum name {krol,pion,wieza,kon,goniec,damka};
-enum kolor {bialy,czarny};
+enum name { krol, pion, wieza, kon, goniec, damka };
+enum color { bialy, czarny };
 
 struct figura_szachowa
 {
 	name name;
-	kolor kolor;
+	color color;
 	int value;
 	unsigned char x;
 	unsigned int y;
@@ -19,6 +19,6 @@ struct figura_szachowa
 int main()
 {
 	figura_szachowa f1;
-	f1.name = krol;
+	cin >> f1.name;
 	cout << f1;
 }
