@@ -1,0 +1,4 @@
+g1.
+utwórz index.php w której bedzie h2 = pople trójkąta; form = sprawdź po zatwierdzeniu czy dane zosatały wypełnione, if not > UZUPEŁNIJ DANE if all good oblicz pole trójkąta, wynik do 2 po przecinku
+
+2)utwórz nowy plik z nazwiskiem; form = 1x txt w którym wprowadzasz cyfre. po zatwierdzeniu na stronie zsl.php wyświetl form z ilością pól jaką wprowadził user w wcześniejszym. po zatwierdzeniu wraca do nazwisko.php i wyświetla sumę liczb
