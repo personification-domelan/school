@@ -1,0 +1,6 @@
+USE hosting;
+LOAD DATA INFILE 'C:\\Users\\domel\\Desktop\\Logowania.csv' INTO TABLE logowania FIELDS TERMINATED BY ',' ENCLOSED BY '''' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+LOAD DATA INFILE 'C:\\Users\\domel\\Desktop\\DaneOsobowe.csv' INTO TABLE daneosobowe FIELDS TERMINATED BY ';' ENCLOSED BY '''' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+INSERT INTO kontaserwisu VALUES ('JanP','SQL','2010-11-11','80102414982','2013-09-12 14:10:54'),('IgorL','PLP1','2009-09-12','81051020231','2016-11-10 22:11:19'),('IkarC','zaq1','2010-10-10','78041623091','2012-04-01 21:00:00'),('Anonymous','Anonumous','2015-09-04',NULL,'2015-10-11 23:10:29'),('Administrator','abc123','2010-01-01',NULL,'2015-10-15 11:10:29');
+INSERT INTO serwery VALUES ('MirrorMat','10.25.12.01','Rozmaitości matematyczne'),('Katamaran','100.25.12.02','Poznajemy świat'),('Wintermute','100.25.12.04','Tajemnice administratora');
+INSERT INTO logowania_old SELECT ID, Login, `Host`, AdresIPUzytkownika, DataLogowania, DataWylogowania FROM logowania WHERE YEAR(Datalogowania) < 2020;
