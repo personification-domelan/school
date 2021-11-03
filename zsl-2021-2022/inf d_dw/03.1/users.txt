@@ -1,5 +1,2 @@
-Jan
-Kali
-Gaja
-Adam
-Leo
+!command
+exit
