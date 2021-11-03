@@ -1,0 +1,12 @@
+main form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    max-width: 20%;
+    margin-bottom: 20px;
+    border: 1px black solid;
+}
+form input#submit {
+    max-width: 80px;
+}
