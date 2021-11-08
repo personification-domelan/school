@@ -1,9 +1,9 @@
 USE firma;
 INSERT INTO customer
-VALUES (1,'Jankowski',NULL), (2,'Sobisiak','ul. Warzywna 4 Kraków'), (3,'Szulc','os. Zielone 45/1 Wrocław');
+VALUES (1,'Jankowski',NULL), (2,'Sobisiak','ul. Warzywna 4 Kraków'), (3,'Szulc','os. Zielone 45/1 Wrocław'), (4,'Matusiak','ul. Czytelna 85/3 Warszawa'), (5,'Turkot','ul. Długa 81/1 Warszawa');
 LOAD DATA INFILE 'ITEMS.csv' INTO TABLE item
 FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"' 
+ENCLOSED BY '''' 
 LINES TERMINATED BY '\r\n'
 IGNORE 1 LINES;
 INSERT INTO `order`
