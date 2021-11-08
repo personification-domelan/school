@@ -1,0 +1,27 @@
+header {
+    border: 1px solid black;
+}
+header img {
+    width: 100%;
+}
+body {
+    width: 1000px;
+}
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+main #l {
+    width: calc(40% - 2px);
+    border: 1px solid black;
+    padding: 20px;
+}
+main #r {
+    width: calc(60% - 2px);
+    border: 1px solid black;
+    padding: 20px;
+}
+#l ul {
+    list-style: none;
+}
