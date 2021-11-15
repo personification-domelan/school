@@ -8,15 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <header>
         <form action="">
             <label for="name">Podaj imię: </label>
             <input type="text" name="name" id="name">
             <label for="quan">Podaj ilość: </label>
-            <input type="text" name="quan" id="quan">
-            <input type="submit" value="Kliknij">
+            <input type="number" name="quan" id="quan">
         </form>
-        <p id="holder"></p>
+        <button id="button1">Kliknij</button>
+        <p id="holder1">Wynik: </p>
+    </header>
+    <main>
+        <form action="">
+            <label for="number">Podaj postawę potęgi: </label>
+            <input type="number" name="number" id="number">
+            <label for="multiplayer">Podaj wykładnik: </label>
+            <input type="number" name="multiplayer" id="multi">
+        </form>
+        <button id="button2">Kliknij</button>
+        <p id="holder2">Potęga </p>
     </main>
     <script src="script.js"></script>
 </body>

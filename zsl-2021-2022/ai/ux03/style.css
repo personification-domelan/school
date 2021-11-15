@@ -1,0 +1,7 @@
+body{
+    max-width: 900px;
+}
+header, main{
+    border-bottom: solid 1px black;
+    max-width: 500px;
+}

@@ -1,6 +1,9 @@
 var n1_1 = document.getElementById('n1_1')
 var n1_2 = document.getElementById('n1_2')
 var n2 = document.getElementById('n2')
+var n3_1 = document.getElementById('n3_1')
+var n3_2 = document.getElementById('n3_2')
+var n3_3 = document.getElementById('n3_3')
 
 var b1 = document.getElementById('button1')
 var b2 = document.getElementById('button2')
@@ -17,18 +20,24 @@ function showsum(){
 
 function showheight(){
     n2t = parseInt(n2.value)
-    let t, tt
+    let t
     if (n2t < 150) {
-        tt = "niski"
+        t = "niski"
     } else if(n2t > 180) {
-        tt = "wysoki"
+        t = "wysoki"
     } else {
-        tt = "średni"
+        t = "średni"
     }
-    t = "Podany wzrost jest: "+tt
-    holder2.innerHTML = t
+    
+    holder2.innerHTML = "Podany wzrost jest: "+t
+}
+
+function TROJKAT(){
+    let t = "TAK"
+    if ((parseInt(n3_1.value)+parseInt(n3_2.value))>parseInt(n3_3.value)) {} else if ((parseInt(n3_1.value)+parseInt(n3_3.value))>parseInt(n3_2.value)) {} else if ((parseInt(n3_3.value)+parseInt(n3_2.value))>parseInt(n3_1.value)) {t = "NIE"}
+    holder3.innerHTML = "Czy z podanych boków uda się utworzyć trójkąt: "+t
 }
 
 b1.addEventListener("click", showsum)
 b2.addEventListener("click", showheight)
-b3.addEventListener("click", show)
+b3.addEventListener("click", TROJKAT)

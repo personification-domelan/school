@@ -2,7 +2,18 @@ main form input{
     display: flex;
     flex-direction: column;
 }
+header form input{
+    display: flex;
+    flex-direction: column;
+}
 main form label{
     float: left;
     margin-right: 5px;
+}
+header form label{
+    float: left;
+    margin-right: 5px;
+}
+main, header{
+    border-bottom: solid 1px black;
 }
