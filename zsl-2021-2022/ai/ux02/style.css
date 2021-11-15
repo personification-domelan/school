@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;   
+}
+header, main, footer{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px black;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+input, button{
+    max-width: 200px;
+}
+button{
+    margin-top: 10px
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

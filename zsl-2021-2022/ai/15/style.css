@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    border-bottom: solid 1px black;
+    width: calc(100%-60px);
+    padding-left: 20px;
+}
+main{
+    border-bottom: solid 1px black;
+    width: calc(100%-60px);
+    padding-left: 20px;
+}
+footer{
+    border-bottom: solid 1px black;
+    width: calc(100%-60px);
+    padding-left: 20px;
+}
