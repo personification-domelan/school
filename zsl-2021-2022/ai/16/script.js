@@ -20,8 +20,20 @@ function printd() {
 }
 
 function printmul() {
-    let t = "Potęga "
-    x = Math.pow(parseInt(nu.value), parseInt(m.value))
+    let t = "Potęga ", i = 0, x = 1, tem, tem1
+    if (parseInt(m.value)>0) {
+        while (i < parseInt(m.value)) {
+            x = x * parseInt(nu.value)
+            i++
+        }
+    } else {
+        while (i > parseInt(m.value)) {
+            x = x * parseInt(nu.value)
+            i--
+        }
+        tem = "1/" + x
+        x = tem
+    }
     t = t+nu.value+"<sup>"+m.value+"</sup> = "+x
     h2.innerHTML = t
 }
