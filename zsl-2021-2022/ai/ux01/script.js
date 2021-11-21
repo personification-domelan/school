@@ -2,32 +2,33 @@ var n = document.getElementById('name')
 var proceed = document.getElementById('button')
 var t = document.getElementById('text')
 var num = document.getElementById('number')
-var main = document.getElementById('main')
+
+var holder = document.getElementById("holder")
 
 var tempn
 
 function namechange(){
     tempn = n.style.color
-    n.style = "color: red"
+    n.style.color = "red"
 }
 
 function namereverse(){
-    n.style = tempn
+    n.style.color = tempn
 }
 
 function namebackground(){
-    n.style = "background-color: "+t.value
+    n.style.backgroundColor = t.value
 }
 
 function namesize(){
-    n.style = "font-size: "+num.value+"px"
+    n.style.fontSize = num.value+"px"
 }
 
 function changeseen(){
-    main.style = "border: 2px solid red; background-color: green; height: 500px; width: 500px"
+    holder.innerHTML = "Height: "+parseInt(n.offsetHeight)+"px<br>Width: "+parseInt(n.offsetWidth)+"px<br>Color: "+n.style.color
 }
 
 n.addEventListener("mouseover", namechange)
 n.addEventListener("mouseout", namereverse)
-proceed.addEventListener("click", namebackground && namesize)
+proceed.addEventListener("click",() => {namebackground(); namesize()})
 n.addEventListener("dblclick", changeseen)
