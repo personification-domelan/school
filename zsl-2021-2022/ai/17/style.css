@@ -5,7 +5,9 @@ header, main, footer {
 }
 input{
     width: 300px;
+    margin: 10px;
 }
 button{
-    
+    width: 100px;
+    margin: 10px;
 }
