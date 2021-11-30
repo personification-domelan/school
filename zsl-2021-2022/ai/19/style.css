@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header, header #baner{
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+main #side{
+    max-width: 300px;
+    margin-left: 30px !important;
+}
+main #main{
+    margin-right: 30px !important;
+    float: left;
+}
