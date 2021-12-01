@@ -1,0 +1,2 @@
+C:\xampp\htdocs\school\zsl-2021-2022\inf d_dw\08\Debug\08.exe
+C:\xampp\htdocs\school\zsl-2021-2022\inf d_dw\08\Debug\08.pdb

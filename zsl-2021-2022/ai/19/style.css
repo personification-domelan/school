@@ -23,3 +23,15 @@ main #main{
     margin-right: 30px !important;
     float: left;
 }
+main div div{
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    text-indent: -40px;
+}
+ul li:before {
+    content: "-  ";
+}
