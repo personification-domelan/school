@@ -1,0 +1,10 @@
+SELECT * FROM samochody WHERE Rocznik BETWEEN 1990 AND 2000 ORDER BY Wiek DESC;
+SELECT * FROM samochody WHERE Marka = 'FIAT'  ORDER BY Przebieg ASC; 
+SELECT * FROM samochody  WHERE Rejestracja LIKE 'PO%' || Rejestracja LIKE 'PZ%'; 
+SELECT * FROM samochody  WHERE Rejestracja LIKE '_________';
+SELECT * FROM samochody  WHERE Marka IN ('FIAT', 'VOLKSWAGEN', 'HONDA'); 
+SELECT * FROM samochody  WHERE Wiek IS NOT NULL  ORDER BY Wiek DESC; 
+SELECT * FROM samochody  WHERE Marka = 'VOLKSWAGEN' && Model LIKE 'Golf%'; 
+SELECT Marka, Model, Rejestracja, IF(KupionyWKraju = 1, "zakupiony w kraju", "przywieziony z zagranicy") AS 'Gdzie kupiony' FROM samochody; 
+SELECT * FROM samochody  WHERE Kolor LIKE '%metalic' && Marka IN ('VOLKSWAGEN', 'HONDA', 'HYUNDAI')  ORDER BY Przebieg ASC; 
+SELECT CONCAT(Marka, ' ', Model) AS samochod, LEFT(Rejestracja, 2) AS poczatek_rejestracji FROM samochody;

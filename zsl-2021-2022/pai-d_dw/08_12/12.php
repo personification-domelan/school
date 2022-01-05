@@ -8,8 +8,15 @@
         <h4>Użytkownicy: </h4>
         <?php
             require_once 'connect.php';
-            $sql = "SELECT * FROM `users` JOIN `cities` ON users.idcity=cities.idcity ORDER BY users.id";
+            $sql = "SELECT users.id, users.name, users.surname, users.birthday, cities.city FROM `users` JOIN `cities` ON users.idcity=cities.idcity ORDER BY users.id";
             $result = $connect->query($sql);
+            if(isset($_GET['error'])){
+                if ($_GET['error']=="Nieprawidlowo") {
+                    echo "Nie usunięto";
+                }else {
+                    echo "Poprawnie usunięto";
+                }
+            }
             echo <<< TABLE
                 <table>
                     <tr>
@@ -34,6 +41,7 @@ TABLE;
 USER;
             }
             echo "</table>";
+            echo '<br><a href="add.user.php">Dodaj użytkownika</a>';
         ?>
     </body>
 </html>

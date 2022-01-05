@@ -10,7 +10,7 @@ main{
     display: flex;
     flex-direction: row;
 }
-main div{
+main div, main div form{
     display: flex;
     flex-direction: column;
     margin: 10px;

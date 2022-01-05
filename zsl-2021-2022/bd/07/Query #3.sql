@@ -1,2 +1,10 @@
 SELECT `nazwisko`, `matematyka` FROM kandydaci WHERE matematyka > 50 ORDER BY `matematyka` ASC;
-SELECT DISTINCT `kierunek` AS "Kierunek studiów" FROM zgloszenia;
+SELECT DISTINCT `kierunek` AS "Kierunek studiów" FROM zgloszenia ORDER BY `kierunek` ASC;
+SELECT `imie`, `nazwisko` FROM kandydaci WHERE `plec` = "k" LIMIT 20;
+SELECT `nazwisko`, `imie`, (`matematyka` + `informatyka` + `fizyka` + `jezykobcy`) AS "Suma wyszytkich punktów" FROM kandydaci ORDER BY (`matematyka` + `informatyka` + `fizyka` + `jezykobcy`) DESC;
+SELECT `informatyka`, `nazwisko` FROM kandydaci WHERE `plec` = "k" AND (`nazwisko` LIKE "W%" OR `nazwisko` LIKE "S%");
+SELECT VERSION(), USER(), DATABASE();
+SELECT kandydaci.`nazwisko`, kandydaci.`imie` FROM kandydaci JOIN zgloszenia ON kandydaci.`idosoby` = zgloszenia.`id osoby` WHERE zgloszenia.kierunek = "informatyka";
+SELECT `nazwisko`, (`matematyka` + `jezykobcy`) AS "Suma punktów z mat i j.obcy" FROM kandydaci WHERE LENGTH(`nazwisko`) = 6 ORDER BY (`matematyka` + `jezykobcy`) ASC;
+SELECT `kierunek` FROM zgloszenia WHERE `id osoby` = "k083";
+SELECT `imie`, `nazwisko` FROM kandydaci WHERE `matematyka` > 40 AND `fizyka` > 50 AND `plec` = "k" ORDER BY `nazwisko` ASC;

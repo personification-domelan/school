@@ -16,20 +16,57 @@ function gotoindex() {
     window.location = "index.html"
 }
 
-function checkiffilled() {
+function checkiffilled1() {
     if (l1.value === "" || l2.value === "") {
-        alert("Proszę uzupełnić wszystkie liczby.")
+        alert("Proszę uzupełnić wszystkie liczby.");return;
     }
-    if () {
-        
+    calc(1);
+}
+
+function checkiffilled2() {
+    if (l1.value === "" || l2.value === "") {
+        alert("Proszę uzupełnić wszystkie liczby.");return;
+    }
+    calc(2);
+}
+
+function checkiffilled3() {
+    if (l1.value === "" || l2.value === "") {
+        alert("Proszę uzupełnić wszystkie liczby.");return;
+    }
+    calc(3);
+}
+
+function checkiffilled4() {
+    if (l1.value === "" || l2.value === "") {
+        alert("Proszę uzupełnić wszystkie liczby.");return;
+    } else if (l2.value == 0) {
+        alert("Nie wolno dzielić przez zero.");return;
+    }
+    calc(4);
+}
+
+function calc(mode) {
+    switch (mode) {
+        case 1:
+           h3.innerHTML = "Dodawanie: "+ parseFloat(parseFloat(l1.value) + parseFloat(l2.value));
+           break;
+        case 2:
+           h3.innerHTML = "Odejmowanie: "+ parseFloat(parseFloat(l1.value) - parseFloat(l2.value));
+           break;
+        case 3:
+           h3.innerHTML = "Mnożenie: "+ parseFloat(parseFloat(l1.value) * parseFloat(l2.value));
+           break;
+        case 4:
+           h3.innerHTML = "Dzielenie: "+ parseFloat(parseFloat(l1.value) / parseFloat(l2.value));
+           break;
+        default:
+            alert("ERROR: calc function borke (unset mode detected)");
     }
 }
 
 baner.addEventListener("click", gotoindex);
-b1.addEventListener("click", checkiffilled);
-b2.addEventListener("click", checkiffilled);
-b3.addEventListener("click", checkiffilled);
-b4.addEventListener("click", checkiffilled);
+b1.addEventListener("click", checkiffilled1);b2.addEventListener("click", checkiffilled2);b3.addEventListener("click", checkiffilled3);b4.addEventListener("click", checkiffilled4);
 
 if (h1) {
     h1.innerHTML = "Znajdujesz się na stronie o tematyce matematycznej."; h1.style.fontStyle = "italic";

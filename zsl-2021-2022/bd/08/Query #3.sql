@@ -1,0 +1,11 @@
+SELECT `imie`, `nazwisko`, ABS(`bramki`) AS "Liczba straconyhc bramek" FROM pilkarze WHERE `bramki` < 0 ORDER BY ABS(`bramki`) DESC;
+SELECT `imie`, `nazwisko` FROM pilkarze WHERE `data_debiutu` > '1970-00-00' ORDER BY `nazwisko`;
+SELECT `nazwisko`, `imie`, `mecz_debiutu`, `bramki` FROM pilkarze WHERE `mecz_debiutu` = "Stany Zjednoczone" AND `bramki` > 5 ORDER BY `bramki` ASC;
+SELECT DISTINCT `mecz_debiutu` AS "reprezentacje" FROM pilkarze;
+SELECT `imie`, `nazwisko` FROM pilkarze ORDER BY `bramki` DESC LIMIT 15;
+SELECT `imie`, `nazwisko` FROM pilkarze WHERE `data_urodz` IS NULL;
+SELECT CONCAT(`imie`, " ", `nazwisko`) AS "zawodnik", `bramki` AS "zdobyte bramki", CONCAT(`mecz_debiutu`, " ", `minuta_debiutu`) AS "debiut" FROM pilkarze;
+SELECT `imie`, `nazwisko` FROM pilkarze WHERE `nazwisko` LIKE "%er" OR `nazwisko` LIKE "%ke" OR `nazwisko` LIKE "%man%";
+SELECT `imie`, `nazwisko` FROM pilkarze WHERE `data_debiutu` BETWEEN '1920-00-00' AND '1939-00-00' ORDER BY `nazwisko` ASC;
+SELECT `imie`, `nazwisko`, `mecz_debiutu` FROM pilkarze WHERE `data_debiutu` = '1932-10-02' OR `data_debiutu` = '1935-09-15';
+SELECT `imie`, `nazwisko`, `data_debiutu`, `mecz_debiutu`, `minuta_debiutu` FROM pilkarze ORDER BY `minuta_debiutu` ASC LIMIT 10;

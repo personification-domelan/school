@@ -1,0 +1,6 @@
+main table, table th, table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 600px;
+    text-align: left;
+}
