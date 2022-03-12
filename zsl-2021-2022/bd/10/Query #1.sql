@@ -16,7 +16,7 @@ CREATE TABLE `klienci` (
 	imie VARCHAR(200) NOT NULL,
 	miasto VARCHAR(50) NOT NULL,
 	liczbaodwiedzinsklepu INT NOT NULL DEFAULT 0,
-	datarejestracji TIMESTAMP NOT NULL,
+	datarejestracji DATE NOT NULL,
 	kwotazakopow FLOAT NOT NULL DEFAULT 0,
 	plec ENUM('m','k')
 	);
