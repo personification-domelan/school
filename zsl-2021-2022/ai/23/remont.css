@@ -1,0 +1,36 @@
+header {
+    background-color: rgb(255,213,163);
+    text-align: center;
+    padding: 20px;
+}
+menu {
+    width: 100%;
+    padding: 0;
+}
+menu div {
+    background-color: rgb(191,112,17);
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    width: 25%;
+    float: left;
+}
+main {
+    height: 400px;
+}
+footer {
+    background-color: rgb(191,112,17);
+    color: white;
+    text-align: right;
+    font-size: 150%;
+}
+menu a {
+    color: white;
+}
+button {
+    background-color: #8B4513;
+    border: #8B4513 solid 2px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}

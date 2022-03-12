@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,17 +18,36 @@
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition register-page">
-<div class="register-box">
+  <?php
+    if (isset($_SESSION['error'])){?>
+      <div class="col-md-3">
+      <div class="card card-danger">
+        <div class="card-header">
+          <h3 class="card-title">Critical ERROR</h3>
+        </div>
+        <div class="card-body text-center">
+          <?php
+          echo $_SESSION['error'];
+          unset($_SESSION['error']);
+          ?>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </div>
+  <?php
+    }
+  ?>
+  <div class="register-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
       <a href="../index.php" class="h1"><b>Admin</b>LTE</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Register a new membership</p>
-
-      <form action="../index.php" method="post">
+      <form action="../scripts/register.php" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Name">
+          <input type="text" name="name" class="form-control" placeholder="Name">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -33,7 +55,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Surname">
+          <input type="text" name="surname" class="form-control" placeholder="Surname">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -41,7 +63,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" name="mail" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -49,7 +71,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Retype Email">
+          <input type="email" name="rmail" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -57,7 +79,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" name="passwd" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -65,43 +87,11 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Retype password">
+          <input type="password" name="rpasswd" class="form-control" placeholder="Retype password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input list="cities" class="form-control" placeholder="Podaj Miasto">
-          <datalist id="cities">
-            <option value="Poznań">
-            <option value="Warszawa">
-            <option value="Kraków">
-            <option value="Gdańsk">
-            <option value="Łódź">
-            <option value="Białystok">
-          </datalist>
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-city"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="date" class="form-control" placeholder="Birth Date">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span>Data Urodzenia</span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <div style="display: flex; flex-direction: column;">
-            <label for="male">Mężczyzna</label>
-            <input type="radio" id="male" class="form-control" name="sex">
-            <label for="female">Kobieta</label>
-            <input type="radio" id="female" class="form-control" name="sex">
           </div>
         </div>
         <div class="row">
