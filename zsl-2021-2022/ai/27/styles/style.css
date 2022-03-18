@@ -34,6 +34,12 @@ sub{
     border-spacing: 20px;
     margin: 20px;
 }
-.projects td img{
-    max-width: 40%;
+.projects td{
+    border: 1px solid;
+    max-width: 50%;
+}
+@media screen {
+    .projects img{
+        max-width: 100%;
+    }
 }

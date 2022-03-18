@@ -13,9 +13,9 @@ function showDate() {
 
 function showClock() {
     let today = new Date();
-    hour.innerHTML = today.getHours();
+    hour.innerHTML = today.getHours() < 10 ? "0"+today.getHours() : today.getHours();
     minute.innerHTML = today.getMinutes() < 10 ? "0"+today.getMinutes() : today.getMinutes();
-    second.innerHTML = today.getSeconds();
+    second.innerHTML = today.getSeconds() < 10 ? "0"+today.getSeconds() : today.getSeconds();
 }
 
 window.onload = function(){showDate();showClock();};
