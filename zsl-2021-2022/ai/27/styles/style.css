@@ -34,3 +34,6 @@ sub{
     border-spacing: 20px;
     margin: 20px;
 }
+.projects td img{
+    max-width: 40%;
+}

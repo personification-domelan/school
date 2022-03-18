@@ -1,0 +1,94 @@
+#body
+{
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Comfortaa', cursive;
+}
+#upper
+{
+    clear: both;
+    margin: 10px;
+}
+#footer
+{
+    clear: both;
+    margin: 10px;
+}
+#main
+{
+    clear: both;
+}
+header
+{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 7px;
+    background-image: url(../imgs/240px-Coca-Cola_logo.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button
+{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 7px;
+    background-color: gold;
+    font-size: medium;
+}
+footer
+{
+    text-align: center;
+    position: fixed; 
+    width: 100%;
+    bottom: 2%;
+    clear: both;
+}
+h1
+{
+    font-size: 50px;
+}
+#text
+{
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding: 7px;
+    width: 65%;
+    float: left;
+    background-color: red;
+    color: white;
+    border: solid 5px black;
+    height: 600px;
+}
+#side
+{
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 5%;
+    padding: 7px;
+    width: 20%;
+    float: left;
+    background-color: white;
+    color: red;
+    border: solid 5px black;
+    border-left: hidden;
+    height: 600px;
+}
+ul
+{
+    color: red;
+}
+table
+{
+    border-collapse: collapse;
+    margin: auto;
+}
+td
+{
+    border: 2px solid white;
+    width: 20%;
+    text-align: center;
+}

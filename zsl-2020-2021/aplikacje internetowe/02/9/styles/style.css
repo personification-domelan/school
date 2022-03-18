@@ -1,0 +1,44 @@
+body 
+{
+        background-image: url(tlo_strony.jpg);
+        background-repeat: no-repeat;
+        background-position: left top;
+}
+#body
+{
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#upper
+{
+    clear: both;
+    padding: 10px;
+}
+#footer
+{
+    clear: both;
+    padding: 10px;
+}
+#text 
+{
+    width: 500px;
+    margin-left: 100px;
+    text-align: justify;
+}
+h1 
+{
+    font-family: impact;
+    font-size: 65px;
+    color: #330000;
+}
+p 
+{
+    font-family: georgia;
+    font-size: 24px;
+    line-height:35px;
+}
+h2 
+{
+    color: #990000;
+}

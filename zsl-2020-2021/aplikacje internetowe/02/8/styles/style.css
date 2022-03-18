@@ -1,0 +1,33 @@
+#body
+{
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#upper
+{
+    clear: both;
+    padding: 10px;
+}
+#footer
+{
+    clear: both;
+    padding: 10px;
+}
+h1 
+{
+    font-family: "Times New Roman";
+    font-size: 36px;
+}
+h2 
+{			
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 36px;	
+    color: #006633;
+}
+h3 {
+    font-family: impact;
+    font-size: 36px;
+    color: #000033;					
+    line-height:58px;
+}

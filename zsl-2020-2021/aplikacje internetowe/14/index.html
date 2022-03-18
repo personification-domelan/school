@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<title>Canvas</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="author" content="Dominik Durlik"/>
+		<link href="styles/style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="body">
+			<div id="upper"></div>
+			<div id="main">
+				<canvas id="io6" width="600" height="70"></canvas>
+				<canvas id="io1" width="150" height="150"></canvas>
+				<canvas id="io4" width="500" height="420"></canvas>
+			</div>
+			<div id="footer"></div>
+		</div>
+		<script>
+			var canvas = document.getElementById('io1');
+			var context = canvas.getContext('2d');
+			context.beginPath();
+			context.arc(75, 75, 70, 0, 2 * Math.PI, false);
+			context.fillStyle = 'yellow';
+			context.fill();
+			context.lineWidth = 5;
+			context.strokeStyle = 'black';
+			context.stroke();
+			context.beginPath();
+			context.arc(50, 50, 10, 0, 2 * Math.PI, false);
+			context.arc(100, 50, 10, 0, 2 * Math.PI, false);
+			context.fillStyle = 'black';
+			context.fill();
+			context.beginPath();
+			context.arc(75, 75, 50, 0, Math.PI, false);
+			context.stroke();
+		</script>
+		<script>
+			var c=document.getElementById("io4");
+			var glx=c.getContext("2d");
+			glx.beginPath();
+			glx.rotate(Math.PI / 7);
+			glx.rect(120, -50, 400, 250);
+			var gradient = glx.createLinearGradient(0, 0, 800, 0);
+			gradient.addColorStop(0, "red");
+			gradient.addColorStop(1, "blue");
+			glx.fillStyle=gradient;
+			glx.fill();
+			glx.lineWidth=10;
+			glx.strokeStyle="orange";
+			glx.stroke();
+		</script>
+		<script>
+			var c=document.getElementById("io6");
+			var glx=c.getContext("2d");
+			glx.font = "50px Tahoma";
+			glx.shadowColor = "red";
+			glx.shadowBlur = "10";
+			glx.fillText("Dzień dobry", 10, 50);
+		</script>
+	</body>
+</html>

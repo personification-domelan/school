@@ -1,0 +1,60 @@
+#body
+{
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#upper
+{
+    clear: both;
+    margin: 10px;
+}
+#footer
+{
+    clear: both;
+    margin: 10px;
+}
+#main
+{
+    clear: both;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#lt
+{
+    text-align: left;
+    vertical-align: top;
+}
+#t
+{
+    text-align: center;
+    vertical-align: top;
+}
+#rt
+{
+    text-align: right;
+    vertical-align: top;
+}
+#l
+{
+    text-align: left;
+}
+#r
+{
+    text-align: right;
+}
+#lb
+{
+    text-align: left;
+    vertical-align: bottom;
+}
+#b
+{
+    text-align: center;
+    vertical-align: bottom;
+}
+#rb
+{
+    text-align: right;
+    vertical-align: bottom;
+}

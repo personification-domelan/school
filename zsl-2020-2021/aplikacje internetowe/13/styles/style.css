@@ -1,0 +1,22 @@
+body
+{
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E5E8FB;
+}
+main
+{
+    clear: both;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+header
+{
+    position: fixed;
+    right: 0;
+    background-color: #4e00a7;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: white;
+}
