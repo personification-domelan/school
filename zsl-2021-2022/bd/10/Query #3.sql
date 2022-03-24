@@ -2,3 +2,11 @@ SELECT * FROM `towary` WHERE `rodzaj` = "Smartfon" ORDER BY `cena` desc, `produc
 select * from `towary` where `ilosc` > 0 order by `cena` desc limit 3; 
 select COUNT(*) as "Ilość kolumn z null" from `towary` where `opis` = "null";
 select max(`cena`) as `max`,min(`cena`) as `min`, `rodzaj` from `towary` group by `rodzaj` order by `cena` desc;
+select count(`rodzaj`) as "ilosc", `rodzaj` from `towary` group by `rodzaj`;
+select max(`kwotazakopow`) as "max", min(`kwotazakopow`) as "min" from `klienci` where `datarejestracji` < "2014-12-01";
+select round(avg(`kwotazakopow`),2) as "avg", round(avg(`liczbaodwiedzinsklepu`),2) from `klienci`;
+select round(avg(`kwotazakopow`),2) as "avg", `plec` from `klienci` group by `plec`;
+select count(*) as "ilosc_klientow", round(avg(`kwotazakopow`),2) as "avg", `miasto`, `plec` from `klienci` group by `miasto`, `plec`;
+select count(*) as "ilosc", `rodzaj` from `towary` where `ilosc` = 0 group by `rodzaj`;
+select max(`cena`) as "max", min(`cena`) as "min", round(avg(`cena`),2)as "avg", `rodzaj` from `towary` group by `rodzaj`;
+select * from `klienci` where `plec` = "k" order by `kwotazakopow` desc limit 3;
