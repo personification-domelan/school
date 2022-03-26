@@ -1,0 +1,15 @@
+select sum(rachunek) "sum" from agregat.agregate;
+select round(avg(rachunek),0) "avg", klient from agregat.agregate where miesiac = "02" and rok = "2014" group by klient;
+select sum(rachunek) "sum", operator from agregat.agregate group by operator having count(*) > 4;
+select max(rachunek) "max", min(rachunek) "min", klient from agregat.agregate group by klient;
+select klient from agregat.agregate group by klient having count(*) > 1 order by sum(rachunek) desc;
+select sum(rachunek) "sum", operator from agregat.agregate where usluga = "komorka" and rok = "2012" group by operator;
+select round(avg(rachunek),0) "avg", operator, miesiac from agregat.agregate where usluga = "stacjonarny" group by operator, miesiac;
+select round(avg(rachunek),0) "avg", plec from agregat.agregate where rok = "2011" and plec = "M" and operator = "orange" union select round(avg(rachunek),0) "avg", plec from agregat.agregate where rok = "2011" and plec = "K" and operator = "orange";
+select round(avg(rachunek),0) "avg", plec from agregat.agregate where rok = "2011" and operator = "orange" group by plec;
+select max(s.sumRachunek) "max", s.operator, s.klient from (select sum(rachunek) sumRachunek, operator, klient from agregat.agregate group by klient) s group by s.operator;
+select count(numer) "numery", operator from agregat.agregate group by operator;
+select count(*) "ilosc", plec, operator from agregat.agregate group by plec, operator;
+select sum(rachunek) sunRachunek, rok, operator from agregat.agregate group by rok, operator having sum(rachunek) > 100000;
+select round(avg(rachunek),0) "avg", stddev(rachunek) "odchylenie standardowe", count(*) as "ilosc", operator from agregat.agregate group by operator;
+select count(*) "ilosc", usluga, operator from agregat.agregate where operator != "plus" group by operator, usluga;

@@ -1,0 +1,16 @@
+L.P.,Klient,Numer,Operator,Miesiac,Rok,Rachunek,Usluga,Plec
+1,1,8798345,Orange,01,2012,35,stacjonarny,K
+2,1,606323322,Play,02,2012,124,komorka,K
+3,2,605870219,T-Mobile,01,2012,81,komorka,M
+4,2,5769011,Orange,02,2012,150,stacjonarny,M
+5,3,504980990,Orange,01,2013,240,komorka,K
+6,3,87989787,PLUS,02,2013,139,stacjonarny,K
+7,4,609876211,T-Mobile,01,2013,90,komorka,K
+8,4,9787892,PLUS,02,2013,23,stacjonarny,K
+9,5,601957281,PLUS,01,2013,490,komorka,M
+10,6,5341211,T-Mobile,03,2014,79,stacjonarny,M
+11,1,606323322,Orange,01,2014,55,komorka,K
+12,1,8798345,Play,02,2014,148,stacjonarny,K
+13,2,605870219,T-Mobile,01,2014,200,komorka,M
+14,2,8576901,Orange,02,2014,102,stacjonarny,M
+15,7,709879123,Play,01,2014,138,komorka,M

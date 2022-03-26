@@ -1,0 +1,13 @@
+use pliki;
+select * from source1 where lenght > 3145728;
+select count(*) as 'count', sum(lenght) as 'lenght', extension from source2 group by extension;
+select distinct * from source1 union select distinct * from source2 order by filename asc;
+select `filename`, `extension` from source1 union all select `filename`, `extension` from source2;
+select * from pendrive where extension = "txt" or extension = "exe" union all select * from source2 where extension = "txt" or extension = "exe";
+select pendrive.* from pendrive left outer join source1 on pendrive.filename = source1.filename where source1.filename is null;
+select source1.* from source1 left outer join source2 on source1.extension = source2.extension where source1.filename = source2.filename and source1.extension = "exe";
+select "source1" as "source", max(`lenght`) as "dlugosc", count(*) as "ilosc" from source1 union select "source2" as "source", max(`lenght`) as "dlugosc", count(*) as "ilosc" from source2;
+select * from pendrive where `date` BETWEEN '2014-01-01' and '2014-12-01' and `lenght` < 1048576 union all select * from source2 where `date` BETWEEN '2014-01-01' and '2014-12-01' and `lenght` < 1048576;
+insert into source4 select distinct * from source1 union all select distinct * from source2;
+select * from source4 intersect select * from source1;
+select * from source1 cross join source2;
