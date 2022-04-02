@@ -23,12 +23,22 @@
 					<li>Kawa palona Arabica</li>
 					<li>Kawa palona Robusta</li>
 					<li>Kawa bezkofeinowa</li>
-					<li><span>Kawa zielona</span></li>
+					<li>Kawa zielona</li>
 				</ol>
 			</div>
-			<div class="main right"><img src="./photos/rysunek.svg" alt="Poczęstuj się"></div>
+			<div class="main right">
+				<div class="container">
+					<p>Podaj numer kawy: </p>
+					<input id="coffeeNumber" type="number">
+					<p>Podaj wagę w dekagramach</p>
+					<input id="coffeeWeight" type="number">
+					<button id="button">Zamów</button>
+					<p id="handler"></p>
+				</div>
+			</div>
 		</main>
 		<footer>Stronę przygotował: <span>Dominik Durlik</span></footer>
 	</body>
-	<script title="debug">setTimeout(function(){location.reload()}, 10000)</script>
+	<script src="./scripts/zamowienia.js"></script>
+	<script title="debug">setTimeout(function(){location.reload()}, 1000)</script>
 </html>

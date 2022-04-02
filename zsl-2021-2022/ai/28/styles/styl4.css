@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    clear: both;
+    background-color: rgb(162, 117, 87);
+    width: 20%;
+    height: 100px;
+}
+header img{
+    height: 100%;
+}
+menu{
+    background-color: rgb(162, 117, 87);
+    width: 40%;
+    height: 100px;
+    position: absolute;
+    top: 0; right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+menu a{
+    color: rgb(65, 98, 85);
+    padding: 20px;
+    margin: 10px;
+    font-size: 150%;
+    line-height: 100px;
+    border: 1px solid rgb(65, 98, 85);
+}
+.main{
+    background-color: rgb(162, 117, 87);
+    color: white;
+    width: 50%;
+    height: 500px;
+    margin: 0;
+    float: left;
+}
+main h1{
+    letter-spacing: 10px;
+}
+main span{
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container button, input{
+    max-width: fit-content;
+    margin: 10px 0;
+}
+footer, .banner{
+    clear: both;
+    background-color: rgb(74, 45, 32);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 0, auto;
+}
+footer span{
+    font-weight: bold;
+}
