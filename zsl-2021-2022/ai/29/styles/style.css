@@ -1,0 +1,20 @@
+body{
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    width: calc(50% - 20px);
+    float: right;
+    background-color: #99ffcd;
+    padding: 10px;
+}
+main h3{
+    text-align: center;
+}
+main #reset{
+    background-color: #fd0300;
+}
+main #submit{
+    background-color: #008200;
+}
