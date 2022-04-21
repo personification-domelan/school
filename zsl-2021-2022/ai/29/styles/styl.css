@@ -1,0 +1,53 @@
+body{
+    background-color: #99ffcc;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    background-color: #99ff66;
+    margin: auto;
+    height: 200px;
+}
+menu{
+    background-color: #66ccff;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px 0;
+}
+menu p{
+    margin: 0 10px;
+}
+menu a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    clear: both;
+    padding: 10px;
+}
+main div{
+    width: 310px;
+    padding: 10px;
+}
+main h3{
+    text-align: center;
+}
+main #reset{
+    background-color: #fd0300;
+}
+main #submit{
+    background-color: #008200;
+}
+footer{
+    background-color: #66ccff;
+    text-align: right;
+}
+.bold{
+    font-weight: bold;
+}
+.container{
+    margin: auto;
+    width: 1000px;
+}
