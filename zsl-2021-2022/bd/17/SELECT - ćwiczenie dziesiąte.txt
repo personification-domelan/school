@@ -1,0 +1,68 @@
+Zadanie na podstawie zadania z matury rozszerzonej z 2008 roku
+
+
+Wykonaj kolejno punkty:
+
+1. Utworzyæ bazê o nazwie DANE_WYPADKOW
+
+2. W bazie tej za pomoc¹ skryptu WYPADKI.SQL utworzyæ trzy tabele
+a) WYPADKI
+b) OSOBY
+c) AUTA
+
+Opis tabel bazy jest nastêpuj¹cy:
+Towarzystwo ubezpieczeniowe posiada w swoim rejestrze pojazdów nastêpuj¹ce dane
+o samochodach osobowych: numer rejestracyjny, marka, rok produkcji, numer PESEL
+w³aœciciela oraz dane o w³aœcicielach pojazdów: imiê, nazwisko, numer PESEL, typ
+miejscowoœci. Ponadto gromadzi informacje o wypadkach spowodowanych przez
+ubezpieczonych w³aœcicieli samochodów, aby na tej podstawie ustalaæ sk³adki ubezpieczenia.
+W kolejnych 700 wierszach pliku auta.txt znajduj¹ siê nastêpuj¹ce dane dotycz¹ce
+samochodów: numer rejestracyjny, marka, rok produkcji, numer PESEL w³aœciciela pojazdu.
+Przyk³ad
+BAU1876 skoda 1998 59042500616
+BAU3353 renault 1999 54010520609
+W kolejnych 689 wierszach pliku osoby.txt znajduj¹ siê nastêpuj¹ce dane: numer PESEL,
+imiê, nazwisko, typ miejscowoœci. Przyjêto nastêpuj¹ce oznaczenia typów miejscowoœci:
+A – du¿e miasto, B – œrednie miasto, C – ma³e miasto i D – wieœ.
+Przyk³ad
+46073182890 Kornel Henrykowski A
+46080423256 Jan Bugajski B
+W kolejnych 500 wierszach pliku wypadki.txt znajduj¹ siê nastêpuj¹ce dane: numer
+identyfikacyjny wypadku, data wypadku, numer rejestracyjny samochodu, wysokoœæ straty,
+któr¹ pokry³o towarzystwo ubezpieczeniowe.
+Przyk³ad
+1 1996-01-03 BL24933 10453,00
+2 1997-10-14 GCH9779 673,00
+3 2002-03-24 NWE4941 8276,00
+Separatorem oddzielaj¹cym s¹siednie elementy w powy¿szych plikach jest znak odstêpu.
+
+3. Wprowadziæ dane z pliku Wypadki.txt do tabeli Wypadki za pomoc¹ importu lub polecenia LOAD_DATA_INFILE lub importu w phpMyAdmin
+
+4. Utworzyæ zapytania (do ka¿dego punktu jedno zapytanie)
+1) Podaj liczby wypadków z udzia³em w³aœcicieli z ma³ego, œredniego i du¿ego miasta oraz ze wsi (oddzielnie dla ka¿dego typu miejscowoœci)
+
+2) Wypisz liczbê osób w zale¿noœci od rodzaju miejscowoœci w której mieszkaj¹, uwzglêdniaj¹c tylko miasta
+i sortuj¹c wynik w zale¿noœci od liczby osób malej¹co
+
+3) Wypisz liczbê aut w zale¿noœci od marki, pomiñ marki dla których jest tylko jedno auto
+
+4) Wyœwietl numer rejestracyjny i markê aut dla tych w³aœcicieli, których nazwisko rozpoczyna siê na literk¹ 'B' lub 'C'
+
+5) Wykonaj trzy rodzaje z³¹czeñ tabel AUTA i WLASCICIELE stosuj¹c kolumnê wspóln¹ PESEL
+    z³¹czenie wewnêtrzne, z³¹czenie zewnêtrzne, zl¹czenie lewostronne zewnêtrzne
+
+6) Podaj, ilu w³aœcicieli samochodów mia³o co najmniej jeden wypadek.
+   Uwaga: W³aœciciela odnotowanego w kilku wypadkach liczymy jeden raz
+   
+7) Ustal maksymaln¹, minimaln¹ i œredni¹ kwotê jak¹ wyp³acono jako odszkodowania
+
+8) Na podstawie wyniku z 7) podaj numer rejestracyjny samochodu oraz imiê i nazwisko w³aœciciela, któremu
+wyp³acono najwiêksz¹ kwotê odszkodowania oraz jej wysokoœæ
+
+9) Podaj ³¹czne sumy odszkodowañ, jakie wyp³aci³o towarzystwo ubezpieczeniowe w roku 2006
+oraz w roku 2007 (nale¿y utworzyæ jedno zapytanie, które wypisuje dwie wartoœci) 
+
+10) Podaj zestawienie zawieraj¹ce markê samochodu oraz liczbê wypadków, w których samochody tej marki by³y odnotowane. Jeœli pewien samochód by³ odnotowany w kilku wypadkach, to liczymy go tyle razy, w ilu wypadkach
+bra³ udzia³. Posortuj to zestawienie w zale¿noœci od liczby wypadków malej¹co.
+
+
