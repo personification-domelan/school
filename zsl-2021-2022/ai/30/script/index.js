@@ -2,14 +2,15 @@ var handler1 = document.getElementById("handler1");
 var handler2 = document.getElementById("handler2");
 var handler3 = document.getElementById("handler3");
 var handler4 = document.getElementById("handler4");
-
-function show(table) {
-    for (let i = 0; i < table.length; i++) {
-        handler1.innerHTML += table[i]
-    }; handler1.innerHTML += "<br>";
-}
+var handler5 = document.getElementById("handler5");
+var handler6 = document.getElementById("handler6");
 
 function zad1() {
+    function show(table) {
+        for (let i = 0; i < table.length; i++) {
+            handler1.innerHTML += table[i]
+        }; handler1.innerHTML += "<br>";
+    }
     let table = new Array(0,1,2,3,4,5,6,7,8,9);
     show(table);
     table.push("10");
@@ -54,6 +55,35 @@ function zad4() {
     let table3 = new Array(6,7,8);
     let temp = table1.concat(table2, table3);
     handler4.innerHTML=temp[Math.floor(Math.random()*9)];
+    handler4.innerHTML += "<br><br>";
 }
 
-window.onload = function() {zad1(); zad2(); zad3(); zad4();};
+function zad5() {
+    let table1 = new Array(0,1,2,3,4,5,6,7,8,9);
+    let table2 = new Array(0,1,2,3,4,5,6,7,8,9);
+    let max = table2[0], min = table2[0];
+    for (let i = 0; i < ((table1.length+table2.length)/2); i++) {
+        handler5.innerHTML += i+". "+table1[i]+" | "+table2[i]+"<br>";
+    }; handler5.innerHTML += "_______________<br>"; table1.reverse();
+    for (let i = 0; i < table1.length; i++) {
+        handler5.innerHTML += i+". "+table1[i]+"<br>";
+    }; table1.reverse(); handler5.innerHTML += "_______________<br>";
+    table1.sort();
+    for (let i = 0; i < table1.length; i++) {
+        handler5.innerHTML += i+". "+table1[i]+"<br>";
+    }; handler5.innerHTML += "_______________<br>";
+    max=Math.max(...table2); min=Math.min(...table2); 
+    handler5.innerHTML += "MAX: "+max+"<br> MIN: "+min+"<br>_______________<br>";
+    table1.splice(5,2,10,11);
+    for (let i = 0; i < table1.length; i++) {
+        handler5.innerHTML += i+". "+table1[i]+"<br>";
+    };
+    handler5.innerHTML += "<br><br>";
+}
+
+function zad6() {
+    
+    handler6.innerHTML += "<br><br>";
+}
+
+window.onload = function() {zad1(); zad2(); zad3(); zad4(); zad5();};

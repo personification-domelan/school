@@ -1,0 +1,53 @@
+1. Utw�rz baz� danych o nazwie SELECT9
+2. Zaimportuj do tej bazy tabele i dane za pomoc� skryptu select9.sql.
+3. Wykonaj zrzut ekranu o nazwie select9.png zawieraj�cy
+   widoczne tabele bazy danych, oraz notatnik z tekstem:
+   autor: twoje imi� i nazwisko
+   
+
+   Baza danych zawiera cztery tabele:
+   OFERTY1	- tabela zawiera oferty lokat bankowych
+   OFERTY2  - tabela zawiera oferty lokat bankowych
+   znaczenie p�l w tych tabelach:
+	ID_O - identyfikator oferty
+	BANK - nazwa banku oferuj�cego lokat�
+	OPROCENTOWANIE - oprocentowanie lokaty w skali rocznej
+	DLUGOSC - czas po jakim lokata si� ko�czy
+	KWOTAMIN - minimalna kwota na jak� mo�na za�o�y� lokat�
+	KWOTAMAX - maksymalna kwota na jak� mo�na za�o�y� lokat�
+   
+   LOKATY   - tabela zawiera akutalne lokaty klient�w banku
+   znaczenie p�l:
+	 ID_L - identyfikator lokaty
+	 ID_K - identyfikator klienta kt�ry za�o�y� lokat� (zgodny z tabel� KLIENCI)
+	 OFERTA - identyfikator oferty z tabel OFERTY1
+	 KWOTA - kwota lokaty
+	 STATUS - status lokaty
+	 
+	 
+   
+   KLIENCI  - tabela zawiera dane klient�w banku
+   
+   
+4. NAPISZ ZAPYTANIA (dla ka�dego zapytania prosz� 
+   napisa� z jakich technik ono korzysta - grupowanie, agregacja, z��czenie)
+
+a) Dla ka�dej z za�o�onych lokat (LOKATY) wy�wietl jej oprocentowanie oraz okres trwania
+b) Wy�wietl ��cznie wszystkie oferty lokat z obu tabel usuwaj�c oferty dubluj�ce si�
+c) Dla ka�dego klienta z tabeli KLIENCI wy�wietl numery posiadanych lokat, je�eli klient nie ma lokaty wypisz null
+d) Wypisz te oferty lokat kt�re wystepuj� wy��cznie w tabeli OFERTA1
+e) Policz liczb� aktualnie za�o�onych lokat w zale�no�ci od statusu (ODNAWIALNY, KONCZONCY)
+f) Wy�wietl nazwisko klienta, kt�rego suma lokat za�o�onych jest kwotowo najwi�ksza
+g) Wypisz liczb� za�o�onych lokat oraz ��czn� sum� kwot tych lokat dla ka�dej z oferowanych 
+   lokat z tabeli OFERTY2
+h) Wypisz dane klient�w, kt�rzy maj� lokaty za�o�one na sum� wi�ksz� ni� 50 tys z�otych
+i) Wypisz kwoty za�o�onych lokat w zale�no�ci od miasta pomi� miasta na literke 'K' 
+j) Podaj liczb� oferowanych lokaty z tabeli OFERTA2 dla ka�dego z bank�w, 
+   pomi� banki kt�re oferuj� mniej ni� 2 lokaty 
+k) Wypisz oferty wsp�lne tabel OFERTA1, OFERTA2 (pomi� w zadaniu pole ID_O tabel)
+l) Dla ka�dej z lokat wypisz nazw� banku w kt�rym jest ona za�o�ona - 
+   uwzgl�dnij tylko oferty z OFERTA1, w przypadku gdy lokata jest
+   oferowana w tabeli OFERTA2 podaj null 
+   
+
+
