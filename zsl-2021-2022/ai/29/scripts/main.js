@@ -17,6 +17,7 @@ function clear() {
     email.value = "";
     service.selectedIndex = 0;
     copy.checked = false;
+    handler.innerHTML = "";
 }
 
 function proceed() {
