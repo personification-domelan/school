@@ -25,8 +25,8 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- Struktura tabeli dla  `auta`
 --
 
-create database if not exists `Wypadki`;
-use `Wypadki`;
+create database if not exists `dane_wypadkow`;
+use `dane_wypadkow`;
 
 DROP TABLE IF EXISTS `auta`;
 CREATE TABLE IF NOT EXISTS `auta` (
