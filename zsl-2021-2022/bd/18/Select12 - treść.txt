@@ -1,0 +1,32 @@
+1. Utworzyæ bazê KREDYTY_BD
+
+2. Utworzyæ tabele bazy korzystaj¹c z pliku Definicje_tabel.sql
+
+3. Wczytaæ dane do tabel korzystaj¹c z pliku Dane_do_tabel.sql
+
+4. Sprawdziæ czy wszystkie dane zosta³y wczytane poprawnie poprzez SELECT * FROM TABELA
+   
+5. Wykonaæ zapytania do bazy korzystaj¹c z podzapytañ:
+
+1) Wypisaæ te po¿yczki, których kwota jest mniejsza od œredniej kwoty po¿yczki w bazie
+ 
+2) Wypisaæ te po¿yczki, których okres sp³aty jest identyczny z okresem maksymalnym okresem sp³aty po¿yczki w bazie
+
+3) Wypisaæ nazwiska i imiona klientów, którzy nie maj¹ ¿adnej po¿yczki
+
+4) Wypisaæ po¿yczki udzielone przez firmê, która udzieli³a 
+   po¿yczek na najwiêksza kwotê
+
+5)  Wypisaæ po¿yczki udzielone przez firmy krajowe
+    
+6)  Podaæ liczbê firm, które udzieli³y wiêcej ni¿ 4 po¿yczki
+
+7)  Wypisaæ mê¿czyzn którzy których wiek jest poni¿ej œredniej     wieku klientów bazy p³ci mêskiej
+
+8)  Zliczyæ liczbê kobiet, które wziê³y po¿yczki na kwotê powy¿ej 2000 z³otyc ³¹cznie
+
+9) Wypisaæ tych klientów (imie, nazwisko), którzy figuruj¹ na
+   w bazie d³u¿ników
+
+10) Wypisaæ tych d³uzników, którzy nie figuruj¹ w spisie 
+    klientów (kierujemy siê imieniem i nazwiskiem)

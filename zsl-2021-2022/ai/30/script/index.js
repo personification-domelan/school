@@ -82,8 +82,10 @@ function zad5() {
 }
 
 function zad6() {
-    
+    let month = new Array("styczenia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
+    let date = new Date();
+    handler6.innerHTML += date.getDay()+" "+month[date.getMonth()]+" "+date.getFullYear();
     handler6.innerHTML += "<br><br>";
 }
 
-window.onload = function() {zad1(); zad2(); zad3(); zad4(); zad5();};
+window.onload = function() {zad1(); zad2(); zad3(); zad4(); zad5(); zad6();};
