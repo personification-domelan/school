@@ -1,0 +1,3 @@
+select z.gatunek, z.obraz from baza.zwierzeta z;
+select z.id, z.gromady_id, z.gatunek, z.wystepowanie from baza.zwierzeta z join baza.gromady g on z.gromady_id = g.id where g.nazwa like "ptaki" or "ssaki";
+select z.gatunek from baza.zwierzeta z
